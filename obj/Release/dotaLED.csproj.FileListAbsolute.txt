@@ -1,0 +1,12 @@
+O:\Projects\C#\dotaLED\bin\Release\dotaLED.exe.config
+O:\Projects\C#\dotaLED\bin\Release\dotaLED.exe
+O:\Projects\C#\dotaLED\bin\Release\dotaLED.pdb
+O:\Projects\C#\dotaLED\bin\Release\Dota2GSI.dll
+O:\Projects\C#\dotaLED\bin\Release\Newtonsoft.Json.dll
+O:\Projects\C#\dotaLED\bin\Release\Dota2GSI.xml
+O:\Projects\C#\dotaLED\bin\Release\Newtonsoft.Json.xml
+O:\Projects\C#\dotaLED\obj\Release\dotaLED.csprojAssemblyReference.cache
+O:\Projects\C#\dotaLED\obj\Release\dotaLED.csproj.CoreCompileInputs.cache
+O:\Projects\C#\dotaLED\obj\Release\dotaLED.csproj.CopyComplete
+O:\Projects\C#\dotaLED\obj\Release\dotaLED.exe
+O:\Projects\C#\dotaLED\obj\Release\dotaLED.pdb
