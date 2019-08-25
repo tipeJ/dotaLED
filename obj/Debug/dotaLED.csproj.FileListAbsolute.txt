@@ -5,7 +5,6 @@ O:\Projects\C#\dotaLED\bin\Debug\Dota2GSI.dll
 O:\Projects\C#\dotaLED\bin\Debug\Newtonsoft.Json.dll
 O:\Projects\C#\dotaLED\bin\Debug\Dota2GSI.xml
 O:\Projects\C#\dotaLED\bin\Debug\Newtonsoft.Json.xml
-O:\Projects\C#\dotaLED\obj\Debug\dotaLED.csprojAssemblyReference.cache
 O:\Projects\C#\dotaLED\obj\Debug\dotaLED.csproj.CoreCompileInputs.cache
 O:\Projects\C#\dotaLED\obj\Debug\dotaLED.csproj.CopyComplete
 O:\Projects\C#\dotaLED\obj\Debug\dotaLED.exe

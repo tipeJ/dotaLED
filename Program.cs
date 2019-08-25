@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using Dota2GSI;
+using Newtonsoft.Json;
 using Microsoft.Win32;
 using System.Threading;
 using System.IO.Ports;
@@ -16,10 +17,15 @@ namespace dotaLED
 
         static void Main(string[] args)
         {
+
             serialPort = new SerialPort();
             serialPort.PortName = "com3";
             serialPort.BaudRate = 9600;
             serialPort.ReadTimeout = 500;
+            if (serialPort.IsOpen)
+            {
+                serialPort.Close();
+            }
             serialPort.Open();
 
             Process[] process = Process.GetProcessesByName("Dota2");
@@ -47,7 +53,8 @@ namespace dotaLED
                if(gs.Previously.Hero.Health != gs.Hero.Health)
                 {
                     double hpPercent = gs.Hero.Health / gs.Hero.MaxHealth;
-                    serialPort.WriteLine(hpPercent.ToString());
+                    Console.WriteLine("HP percent" + gs.Hero.HealthPercent.ToString());
+                    serialPort.WriteLine(gs.Hero.HealthPercent.ToString());
                 } 
             }
         }
