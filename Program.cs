@@ -54,8 +54,17 @@ namespace dotaLED
                 {
                     double hpPercent = gs.Hero.Health / gs.Hero.MaxHealth;
                     Console.WriteLine("HP percent" + gs.Hero.HealthPercent.ToString());
-                    serialPort.WriteLine(gs.Hero.HealthPercent.ToString());
-                } 
+                    serialPort.WriteLine("HP:" + gs.Hero.HealthPercent.ToString());
+                }
+               if(gs.Previously.Hero.Name != gs.Hero.Name)
+                {
+                    serialPort.WriteLine("HERO:" + gs.Hero.Name);
+                }
+               if(gs.Hero.IsMagicImmune != gs.Previously.Hero.IsMagicImmune)
+                {
+                    //If the BKB status is different from the previous gamestate, write the updated status to the serialport in the form of String boolean (true / false), which will be parsed in the arduino script
+                    serialPort.WriteLine("BKB:" + gs.Hero.IsMagicImmune.ToString().ToLower());
+                }
             }
         }
     }

@@ -9,3 +9,4 @@ O:\Projects\C#\dotaLED\obj\Debug\dotaLED.csproj.CoreCompileInputs.cache
 O:\Projects\C#\dotaLED\obj\Debug\dotaLED.csproj.CopyComplete
 O:\Projects\C#\dotaLED\obj\Debug\dotaLED.exe
 O:\Projects\C#\dotaLED\obj\Debug\dotaLED.pdb
+O:\Projects\C#\dotaLED\obj\Debug\dotaLED.csprojAssemblyReference.cache
