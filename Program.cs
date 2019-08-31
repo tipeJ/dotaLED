@@ -69,10 +69,8 @@ namespace Dota2GSI_Example_program
                 Console.WriteLine("HP percent" + gs.Hero.HealthPercent.ToString());
                 SP.WriteLine("HP:" + gs.Hero.HealthPercent.ToString());
             }
-            if (gs.Previously.Hero.Name != gs.Hero.Name)
-            {
-                SP.WriteLine("HERO:" + gs.Hero.Name);
-            }
+            Console.WriteLine("Current Hero Name:" + gs.Hero.Name);
+            SP.WriteLine("HERO:" + gs.Hero.Name);
             if (gs.Hero.IsMagicImmune != gs.Previously.Hero.IsMagicImmune)
             {
                 //If the BKB status is different from the previous gamestate, write the updated status to the serialport in the form of String boolean (true / false), which will be parsed in the arduino script
