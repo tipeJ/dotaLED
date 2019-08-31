@@ -22,11 +22,25 @@ namespace dotaLED
             serialPort.PortName = "com3";
             serialPort.BaudRate = 9600;
             serialPort.ReadTimeout = 500;
-            if (serialPort.IsOpen)
+            try
             {
-                serialPort.Close();
+                if (serialPort.IsOpen)
+                {
+                    serialPort.Close();
+                }
+
+                Thread.Sleep(700);
+                serialPort.Open();
+            } catch (Exception ex)
+            {
+                if (serialPort.IsOpen)
+                {
+                    serialPort.Close();
+                }
+
+                Thread.Sleep(700);
+                serialPort.Open();
             }
-            serialPort.Open();
 
             Process[] process = Process.GetProcessesByName("Dota2");
             if(process.Length == 0)
